@@ -1,8 +1,12 @@
 const app = express();
 const path = require("path");
-const port = 3030;
+const port = 4000;
 app.use(express.static("public"));
 process.env.PWD = process.cwd()
+
+app.listen(process.env.PORT || 4000, ()=>{
+    console.log('Servidor funcionando');
+});
 
 app.use(express.static(process.env.PWD + '/public'));
 
