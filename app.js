@@ -15,14 +15,15 @@ app.use(express.static(process.env.PWD + '/public'));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/home.html"))});
+    app.get("/", (req, res) => {
+        res.sendFile(path.join(__dirname, "/views/login.html"))});
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/ofertas.html"))});  
  app.get("/", (req, res) => {
-     res.sendFile(path.join(__dirname, "/views/tiendasoficiales.html"))});  
-     
+     res.sendFile(path.join(__dirname, "/views/tiendasoficiales.html"))});       
 app.get("/", (req, res) => {
      res.sendFile(path.join(__dirname, "/views/vender.html"))});
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/ayuda.html"))});
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/creatucuenta.html"))});
+    res.sendFile(path.join(__dirname, "/views/register.html"))});
