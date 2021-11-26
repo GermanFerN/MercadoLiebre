@@ -87,14 +87,6 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-
-.createform {
-   padding: 20px 15px;
-   width: 200px;
-   text-align: center;
-
-}
-
 .control-formulario {
    margin-bottom: 15px;
 }
@@ -103,6 +95,8 @@ footer {
    margin-bottom: 5px;
    font-style: italic;
    display: block;
+   width: 50%;
+   margin: 0% auto;
 }
 
 .control {
@@ -110,10 +104,19 @@ footer {
    padding: 8px 8px;
 }
 
+.main-register {
+   display: flex;
+   justify-content: center;
+   
+}
 .interes {
-   display: inline-table;
+   display: inline-block;
 }
 
+.ingresa {
+   width: 50%;
+   margin: 0% auto;
+}
 
 @media (max-width:361px){
     #descripcion {
